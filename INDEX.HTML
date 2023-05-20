@@ -35,7 +35,7 @@
       }
 
       .NO {
-        BACKGROUND: URL('./leave.png');
+        BACKGROUND: URL('./LEAVE.PNG');
         BACKGROUND-SIZE: contain;
         MARGIN: 4PX;
         BORDER-RADIUS: 2PX;
@@ -43,22 +43,25 @@
         HEIGHT: 200PX;
       }
       .GOAWAY:HOVER .NO {
-        BACKGROUND: URL('./leave2.png');
-        BACKGROUND-SIZE: contain;
+        BACKGROUND: URL('./LEAVENOW.PNG');
+        BACKGROUND-SIZE: CONTAIN;
+        TRANSITION: BACKGROUND .5S EASE;
       }
-
-      .GOAWAY:HOVER BODY {
-        BACKGROUND: BLACK;
+      
+      .GOAWAY:HOVER .BLACKOUT {
+        DISPLAY: BLOCK;
+        MIX-BLEND-MODE: SATURATION;
+        TRANSITION: BACKGROUND .25S EASE;
       }
 
       .CONTAINER {
         WIDTH: 218PX;
         HEIGHT: 360px;
-        DISPLAY: flex;
+        DISPLAY: FLEX;
         JUSTIFY-CONTENT: CENTER;
         ALIGN-ITEMS: CENTER;
-        FLEX-DIRECTION: column;
-        TEXT-ALIGN: center;
+        FLEX-DIRECTION: COLUMN;
+        TEXT-ALIGN: CENTER;
       }
 
       .GTFO {

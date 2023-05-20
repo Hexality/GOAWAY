@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<HTML>
+  <HEAD>
+    <TITLE>GO AWAY...</TITLE>
+    <STYLE>
+      HTML, BODY {
+        MARGIN: 0;
+        PADDING: 0;
+      }
+      
+      BODY {
+        BACKGROUND: #301d1e;
+        DISPLAY: GRID;
+        POSITION: ABSOLUTE;
+        PLACE-ITEMS: CENTER;
+        TOP: 0;
+        LEFT: 0;
+        RIGHT: 0;
+        BOTTOM: 0;
+      }
+
+      .BLACKOUT {
+        DISPLAY: NONE;
+        BACKGROUND: BLACK;
+        POSITION: ABSOLUTE;
+        TOP: 0;
+        LEFT: 0;
+        RIGHT: 0;
+        BOTTOM: 0;
+      }
+
+      .GOAWAY {
+        BORDER: 4PX SOLID RED;
+        BORDER-RADIUS: 8PX
+      }
+
+      .NO {
+        BACKGROUND: URL('./leave.png');
+        BACKGROUND-SIZE: contain;
+        MARGIN: 4PX;
+        BORDER-RADIUS: 2PX;
+        WIDTH: 200PX;
+        HEIGHT: 200PX;
+      }
+      .GOAWAY:HOVER .NO {
+        BACKGROUND: URL('./leave2.png');
+        BACKGROUND-SIZE: contain;
+      }
+
+      .GOAWAY:HOVER BODY {
+        BACKGROUND: BLACK;
+      }
+
+      .CONTAINER {
+        WIDTH: 218PX;
+        HEIGHT: 360px;
+        DISPLAY: flex;
+        JUSTIFY-CONTENT: CENTER;
+        ALIGN-ITEMS: CENTER;
+        FLEX-DIRECTION: column;
+        TEXT-ALIGN: center;
+      }
+
+      .GTFO {
+        COLOR: RED;
+        FONT-FAMILY: ARIAL, SANS-SERIF;
+        FONT-SIZE: 36PX
+      }
+
+    </STYLE>
+  </HEAD>
+  <BODY>
+    <DIV CLASS="CONTAINER">
+      <DIV CLASS="GOAWAY">
+        <DIV CLASS="NO"></DIV>
+        <DIV CLASS="BLACKOUT"></DIV>
+      </DIV>
+      <H1 CLASS="GTFO">GO AWAY!</H1>
+    </DIV>
+  </BODY>
+</HTML>
